@@ -1,0 +1,20 @@
+.characterCard {
+  width: 230px;
+  color: rgba(229, 233, 237, 0.901);
+  animation: fadeInAnimation ease-in 0.8s;
+  text-align: center;
+  align-items: center;
+  padding: 1rem;
+  padding-top: 0;
+  display: flex;
+  border-radius: 8px;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  background-color: var(--color-bg-secondary);
+}
+.imgCard {
+  width: 215px;
+  border-radius: 8px;
+  padding: 5px;
+}
