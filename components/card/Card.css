@@ -1,5 +1,6 @@
-.characterCard {
-  width: 230px;
+.cardContainer {
+  width: 226px;
+  height: 300px;
   color: rgba(229, 233, 237, 0.901);
   animation: fadeInAnimation ease-in 0.8s;
   text-align: center;
@@ -14,7 +15,25 @@
   background-color: var(--color-bg-secondary);
 }
 .imgCard {
-  width: 215px;
+  max-width: 220px;
+  max-height: 180px;
+  object-fit: cover;
   border-radius: 8px;
-  padding: 5px;
+}
+@media (max-width: 450px) {
+  .cardContainer {
+    width: 150px;
+    height: 290px;
+    padding: 5px;
+    justify-content: space-evenly;
+  }
+  .imgCard {
+    max-width: 135px;
+    max-height: 170px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  .cardContainer h2 {
+    font-size: 1.2em;
+  }
 }

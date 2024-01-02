@@ -1,5 +1,6 @@
 import Header from './components/header/Header';
 import Card from './components/card/Card';
+import Footer from './components/footer/Footer';
 
 const getCharactersData = async () => {
   try {
@@ -32,4 +33,5 @@ const showContent = (data) => {
   const characters = data.map((character) => {
     Card(character);
   });
+  Footer();
 };
